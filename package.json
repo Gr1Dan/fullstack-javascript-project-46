@@ -13,7 +13,7 @@
   },
   "license": "ISC",
   "author": "GriDan",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,6 +24,8 @@
     "globals": "^16.3.0"
   },
   "dependencies": {
-    "commander": "^14.0.0"
+    "commander": "^14.0.0",
+    "fs": "^0.0.1-security",
+    "lodash": "^4.17.21"
   }
 }
