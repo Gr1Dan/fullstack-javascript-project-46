@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-
+import genDiff from "../src/index.js";
 import { Command } from "commander";
 
 
@@ -11,6 +11,7 @@ program
     .option(`-h, --help`, `displays help for command`)
     .argument('<filepath1>', 'path to file1')
     .argument('<filepath2>', 'path to file2')
+    .action((file1, file2) => genDiff(file1, file2));
 
 
 program.parse()
