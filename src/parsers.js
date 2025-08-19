@@ -31,5 +31,5 @@ const fileParse = (data, type) => {
             throw new Error(`Some problem with format ${type}!`);
     }
 };
-
+    
 export default fileParse;
